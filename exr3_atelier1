@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 5, p = 9;
+    int q;
+    float x;
+
+    q = n < p;               // 1 -> vrai
+    cout <<  q = " << q << endl;
+
+    q = n == p;              // 0 -> faux 
+    cout << " q = " << q << endl;
+
+    q = p % n + p > n;       // (9%5=4) -> 4+9>5 -> 13>5-> vrai -> 1
+    cout << " q = " << q << endl;
+
+    x = p / n;               // 9/5 = 1 
+    cout << " x = " << x << endl;
+
+    x = (float)p / n;        // 9.0/5 = 1.8
+    cout << " x = " << x << endl;
+
+    x = (p + 0.5) / n;       // 9.5/5 = 1.9
+    cout << " x = " << x << endl;
+
+    x = (int)(p + 0.5) / n;  // 1.0
+    cout << " x = " << x << endl;
+
+    q = n * (p > n ? n : p); // 25
+    cout << " q = " << q << endl;
+
+    q = n * (p < n ? n : p); // 45
+    cout << " q = " << q << endl;
+
+    return 0;
+}
