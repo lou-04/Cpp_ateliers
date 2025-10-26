@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+void compteur() {
+    // variable statique : elle garde sa valeur entre les appels
+    static int nbAppels = 0;
+    nbAppels++;  // on incrémente à chaque appel
+    cout << "Appel numéro " << nbAppels << endl
+}
+
+int main() {
+    compteur();
+    compteur();
+    compteur();
+    return 0;
+} 
